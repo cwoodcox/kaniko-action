@@ -18,4 +18,5 @@ runs:
   using: docker
   image: docker://gcr.io/kaniko-project/executor:latest
   args:
-    - --destination ${{ inputs.destination }}
+    - --destination
+    - ${{ inputs.destination }}

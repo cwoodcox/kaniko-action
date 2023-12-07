@@ -1,6 +1,6 @@
-name: Hello, World!
-description: Greet someone and record the time
-author: GitHub Actions
+name: Kaniko Action
+description: Invoke Kankiko as a container to build a container image
+author: Corey Woodcox
 
 # Define your inputs here.
 inputs:

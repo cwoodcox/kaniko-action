@@ -4,7 +4,7 @@ author: Corey Woodcox
 
 # Define your inputs here.
 inputs:
-  image:
+  destination:
     # TODO: This should support multiple values, like kaniko does
     description: "The name/tags of the desired image (ex: ghcr.io/cwoodcox/my-image)"
     required: true
@@ -18,4 +18,4 @@ runs:
   using: docker
   image: docker://gcr.io/kaniko-project/executor:latest
   args:
-    - --image ${{ inputs.image }}
+    - --destination ${{ inputs.destination }}
